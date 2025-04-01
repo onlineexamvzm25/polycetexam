@@ -35,12 +35,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><label>FE1:</label><a href="index1.html">On Apr 3</a></td>
+                        <td><label>FE1:</label><a href="waiting.html">On Apr 3</a></td>
                         <td><label>UT1:</label><a href="waiting.html">Apr 6( 3 PM )</a></td>
                         <td><label>GT1:</label><a href="waiting.html">Apr 24( 3 PM )</a></td>
                     </tr>
                     <tr>
-                        <td><label>FE2:</label><a href="index1.html">On Apr 4</a></td>
+                        <td><label>FE2:</label><a href="waiting.html">On Apr 4</a></td>
                         <td><label>UT2:</label><a href="waiting.html">Apr 9( 3 PM )</a></td>
                         <td><label>GT2:</label><a href="waiting.html">Apr 26( 3 PM )</a></td>
                     </tr>
@@ -57,7 +57,11 @@
                     <tr>
                         <td></td>
                         <td><label>UT5:</label><a href="waitinghtml">Apr 20( 3 PM )</a></td>
-                        <td><label>Previous Papers:</label><a href="waiting.html">Model Papers</a></td>
+                        <td>
+                            <label for="previous-papers">Previous Papers:</label>
+                            <a href="#" id="download-link">Model Papers</a>
+                          </td>
+                          
                         <td></td>
                     </tr>
                 </tbody>
@@ -77,5 +81,22 @@
 
     </div>
 
+   <script>
+      document.getElementById('download-link').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent the default action of the link
+  
+  // Ask for confirmation
+  var userConfirmed = confirm("These are old syllabus papers(Don't depend on these) \n Do you want to download the Previous Papers?");
+  
+  if (userConfirmed) {
+    // Trigger the download if the user clicks "Yes"
+    var link = document.createElement('a');
+    link.href = 'previous.pdf'; // The path to your PDF file
+    link.download = 'previous.pdf'; // The name the file will have when downloaded
+    link.click(); // Programmatically click the link to trigger the download
+  }
+});
+
+   </script> 
 </body>
 </html>
