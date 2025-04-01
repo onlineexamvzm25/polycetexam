@@ -206,7 +206,7 @@
       "qopt4": "11 : 14",
       "qans": "2",
       "qhint": "Let: r be the radius of the circle and a be the side length of the square.\n Perimeter: The perimeter of the circle (circumference) is 2πr, and the perimeter of the square is 4a. \n Equal Perimeters: We're given that 2πr = 4a. \n Solve for a: Simplifying the equation, we get a = (πr)/2. \n Area of Circle: The area of the circle is πr². \n Area of Square: The area of the square is a² = ((πr)/2)² = (π²r²)/4. \n Ratio of Areas: The ratio of the area of the circle to the area of the square is (πr²) : ((π²r²)/4) = 4 : π. \n plify the Ratio: Using the approximation of π as 22/7, we get 4 : (22/7) = 28 : 22 = 14 : 11. \n",
-      "imgid": "19"
+      "imgid": "0"
     },
     {
       "qid": "20",
@@ -272,7 +272,7 @@
       "qopt4": "2/3",
       "qans": "2",
       "qhint": "The standard die has six faces.\n Need probability of rolling a dice and get number greater than 4.\n The favourable outcomes are: 5 and 6(two outcomes)\n Total possible outcomes a die =6\n  The probability P of getting a number greater than 4 is:\n P=number of favorable  outcomes/total possible outcomes\n   P=2/6\n =1/3",
-      "imgid": "25"
+      "imgid": "0"
     },
    
    {
