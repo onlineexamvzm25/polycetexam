@@ -294,18 +294,17 @@ document.getElementById("download-pdf").addEventListener("click", function(event
     content += `<li>2. ${formattedOpt2}</li>`;
     content += `<li>3. ${formattedOpt3}</li>`;
     content += `<li>4. ${formattedOpt4}</li>`;
-
+    content += `<br>`;
     const userSelection = selectedOptions[q.qid];
     content += `<li>Your Selection: Option ${userSelection}</li>`;
     content += `<li>Answer: Option ${q.qans}</li>`;
-
+    content += `<br>`;
     if (formattedHint.length > 3) {
       content += `<li>Hint: ${formattedHint.replace(/\n/g, '<br>')}</li>`;
     } else {
       content += `<li>Hint: ${formattedHint}</li>`;  // If it's 3 characters or less, just display as is.
     }
-
-    content += `</ul>`;
+    
     content += `</div><br><br>`;
   }
 
