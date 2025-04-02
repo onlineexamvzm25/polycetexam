@@ -34,7 +34,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     
-    if(password==pswrd){
+    //if(password==pswrd)
+      if((password.length)>1){
         window.location.href = "exam.html";
     }
     else {
@@ -45,10 +46,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
   function displayText() {
     // Replace this with your dynamic text assignment logic
-    var dynamicText = "Hi....\n 1.Make sure your INTERNET good connectivity and BATTERY.\n 2.Your FIRST ATTEMPT of exam marks only saved. ";
-    dynamicText = dynamicText+"\n 3. Exam will be CLOSED AUTOMATICALLY once specified duration completed.";
+    var dynamicText = "Hi....\n1. Make sure your INTERNET and BATTERY fine.\n2.Don't press Back or Refresh button. ";
+    dynamicText = dynamicText+"\n3. Exam will be CLOSED AUTOMATICALLY once specified duration completed.";
 
-    dynamicText = dynamicText+"\n 4. TIMER is running down once you click on login and EXAM WILL START immediatly. \n 5.Download your Exam RESPONSE sheet. \n 6.Don't Refresh or reload the page."
+    dynamicText = dynamicText+"\n 4. TIMER is running down once you click on login and EXAM WILL START immediatly. \n 5.Attempt the Exam Only once(Multiple attempts get ZERO marks)."
 
     alert(dynamicText);
 }
