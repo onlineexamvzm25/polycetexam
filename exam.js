@@ -216,7 +216,7 @@ document.getElementById("download-pdf").addEventListener("click", function(event
   const resmarks = "Correct : " + CorrectdCount;
   const wrmarks = "Wrong : " + WrongCount;
   const examresult = "Note : Exam Result/State Ranks of all students will be provided tomorrow";
-  const contactdet = "For more details contact/watsup on 8125250125 ";
+  const contactdet = "For more details contact/whatsapp on 8125250125 ";
 
   // Apply replaceSymbols to basic information
   content += `<h2>${replaceSymbols(exname)}</h2>`;
@@ -353,6 +353,7 @@ function replaceSymbols(text) {
     .replace(/°/g, '&deg;')   // Replace ° (Degree symbol)
     .replace(/²/g, '&sup2;')   // Replace ² (Square)
     .replace(/³/g, '&sup3;')
+    .replace(/Ω/g, '&Omega;')  
     .replace(/≤/g, '&le;');    // Replace ≤ (Less than or equal)
 }
 
